@@ -1,6 +1,28 @@
-body {
+/* body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#home {
+  width: 100vw; 
+  height: 100vh; 
+  background: url("../images/cinema.jpg") no-repeat; 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#home-text {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 a {
