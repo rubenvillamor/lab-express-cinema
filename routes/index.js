@@ -21,13 +21,13 @@ router.get("/movies", (req, res, next) => {
 });
 
 router.get("/movie/:id", (req, res, next) => {
-    let movieId = req.params.id.slice(1)
+    let movieId = req.params.id
     console.log(movieId)
     Movie.findById(movieId)
     .then((response) => {
         console.log(response)
         res.render("movie-details.hbs", {
-            movie : response
+            movieDetails : response,
         })
     })
     .catch((error) => {
